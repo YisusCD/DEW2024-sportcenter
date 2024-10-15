@@ -7,6 +7,10 @@ class Service {
   giveRating (rating) {
     this.ratings.push(rating)
   }
+
+  get rating () {
+    return this.ratings.indexOf(this.rating)
+  }
 }
 
 module.exports = Service
