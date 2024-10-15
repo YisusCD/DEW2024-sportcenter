@@ -9,7 +9,11 @@ class Service {
   }
 
   get rating () {
-    return this.ratings.indexOf(this.rating)
+    if (this.ratings.length === 0) {
+      return 0
+    } else {
+      
+    }
   }
 }
 
