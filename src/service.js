@@ -1,14 +1,11 @@
-const SportCenter = require('./sport-center');
-
-class Service extends SportCenter {
-  ratings = []
-
-  constructor (name) {
-    super(name)
+class Service {
+  constructor (name, ratings) {
+    this.name = name
+    this.ratings = []
   }
 
-  giveRating () {
-    this.ratings.push(ratings)
+  giveRating (rating) {
+    this.ratings.push(rating)
   }
 }
 
